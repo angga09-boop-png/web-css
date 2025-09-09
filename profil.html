@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Rizky Manggala Putra</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Flexbox layout untuk halaman profil */
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .profile-header {
+            text-align: center;
+            margin-bottom: 30px;
+            width: 100%;
+        }
+        
+        .profile-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            width: 100%;
+        }
+        
+        .profile-image {
+            text-align: center;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            border: 5px solid #1e5799;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .profile-details {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .detail-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .detail-item:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-item h3 {
+            color: #1e5799;
+            margin-bottom: 5px;
+        }
+        
+        .detail-item p {
+            margin: 0;
+            font-size: 1.1rem;
+        }
+        
+        .hobby-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        
+        .hobby-item {
+            background-color: #f0f8ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #1e5799;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        
+        .social-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #1e5799;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-link:hover {
+            background-color: #FF6B00;
+        }
+        
+        @media (max-width: 768px) {
+            .profile-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .profile-image img {
+                max-width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Profil Siswa</h1>
+        <p>Rizky Manggala Putra - Peminat Bola Voli</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="sejarah.html">Sejarah</a></li>
+            <li><a href="teknik.html">Teknik Dasar</a></li>
+            <li><a href="profil.html">Profil</a></li>
+        </ul>
+    </nav>
+    
+    <div class="profile-container">
+        <div class="profile-header">
+            <h2>Profil Rizky Manggala Putra</h2>
+            <p>Pelajar dan Penggemar Bola Voli</p>
+        </div>
+        
+        <div class="profile-content">
+            <div class="profile-image">
+                <img src="angga hansore.jpg" alt="Rizky Manggala Putra">
+                
+                <div class="social-links">
+                    <a href="https://www.instagram.com/rizky_manggala_putra/" class="social-link">Instagram</a>
+                    <a href="https://www.tiktok.com/@gakpunyabandelk.o2?_t=ZS-8zZVFIJPhGK&_r=1" class="social-link">Tiktok</a>
+                    <a href="https://github.com/angga09-boop-png" class="social-link">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="profile-details">
+                <div class="detail-item">
+                    <h3>Informasi Pribadi</h3>
+                    <p><strong>Nama:</strong> Rizky Manggala Putra</p>
+                    <p><strong>NIS:</strong> 2433901</p>
+                    <p><strong>Kelas:</strong> XI PPLG 2</p>
+                    <p><strong>Sekolah:</strong> SMKN 1 SAYUNG</p>
+                    <p><strong>Alamat:</strong> Demak, Jawa Tengah</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Tentang Saya</h3>
+                    <p>Saya adalah seorang siswa SMKN 1 Sayung yang tertarik dengan pengembangan perangkat lunak dan gemar bermain bola voli. Saya mulai tertarik dengan bola voli sejak kelas 8 dan sejak itu sering berpartisipasi dalam turnamen antar sekolah.</p>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Hobi & Minat</h3>
+                    <div class="hobby-list">
+                        <span class="hobby-item">Nonton Anime</span>
+                        <span class="hobby-item">Baca Manhwa</span>
+                        <span class="hobby-item">Bermain game</span>
+                       
+                    </div>
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Pendidikan</h3>
+                    <p><strong>SMKN 1 Sayung</strong> - Jurusan Pengembangan Perangkat Lunak dan Gim</p>
+                  
+                   
+                </div>
+                
+                <div class="detail-item">
+                    <h3>Hubungi Saya</h3>
+                    <p>Email: rizky.m.putra@smkn1sayung.sch.id</p>
+                    <p>Telepon: +62 823-4567-8901</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Website Bola Voli. All rights reserved.</p>
+        <p>Dibuat untuk edukasi dan promosi olahraga bola voli</p>
+    </footer>
+</body>
+</html>
